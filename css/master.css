@@ -1,5 +1,4 @@
 body{
-  height: 1500px;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
@@ -165,4 +164,52 @@ footer{
   background-color: #e8501d;
   text-align: center;
   color: #ffffff;
+}
+
+/* Media Queries */
+@media(max-width: 860px) {
+  #newsletter{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #newsletter h1,
+  #newsletter form{
+    float: none;
+    text-align: center;
+    width: 100%
+    padding: 5px;
+    margin: 0;
+  }
+
+}
+
+@media(max-width: 750px) {
+  #boxes .box{
+    float: none;
+    width: 100%;
+  }
+}
+
+@media(max-width: 600px) {
+  header #branding,
+  header nav,
+  header li{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width: 490px) {
+  #newsletter button{
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type='email']{
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
