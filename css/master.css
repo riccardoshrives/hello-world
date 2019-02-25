@@ -89,7 +89,7 @@ header a:hover{
   width: 110%;
   background-color: pink;
   background-image: url(../img/showcase.jpg);
-  background-size: 120vw;
+  background-size: 120vh;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -203,6 +203,12 @@ footer{
   }
 }
 
+@media(min-width: 791px) {
+  #bg1{
+    background-size: 120vw;
+  }
+}
+
 @media(max-width: 490px) {
   #newsletter button{
     display: block;
@@ -211,5 +217,27 @@ footer{
   #newsletter form input[type='email']{
     width: 100%;
     margin-bottom: 5px;
+  }
+}
+
+@media(max-width: 390px) {
+  header #branding,
+  header nav,
+  header li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    font-size: 48px;
+    margin: 5px;
+  }
+
+  #showcase p{
+    font-size: 12px;
   }
 }
